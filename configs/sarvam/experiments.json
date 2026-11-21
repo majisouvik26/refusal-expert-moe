@@ -1,0 +1,9 @@
+{
+  "pilot": {"seed": null, "args": ["--batch-size", "24", "--pilot-cap", "2048", "--hours", "11"]},
+  "size-extension": {"seed": "size-extension", "args": ["--batch-size", "24", "--pilot-cap", "2048", "--hours", "7"]},
+  "steermoe": {"seed": "steermoe", "args": ["--batch-size", "24", "--pilot-cap", "2048", "--gsm8k-problems", "48", "--gsm8k-cap", "1024", "--hours", "8"]},
+  "l5e65": {"seed": "l5e65", "args": ["--batch-size", "24", "--pilot-cap", "2048", "--gsm8k-problems", "48", "--gsm8k-cap", "1024", "--hours", "6"]},
+  "fresh-test": {"seed": "fresh-test", "args": ["--prompt-bank", "data/fresh_test_bank.jsonl", "--batch-size", "150", "--pilot-cap", "2048", "--gsm8k-problems", "48", "--gsm8k-cap", "1024", "--hours", "22"]},
+  "removal-methods": {"seed": "removal-methods", "args": ["--batch-size", "96", "--pilot-cap", "2048", "--gsm8k-problems", "48", "--gsm8k-cap", "1024", "--gsm8k-with-pilot", "--hours", "8"]},
+  "overrefusal": {"seed": "overrefusal", "args": ["--prompt-bank", "data/overrefusal_bank.jsonl", "--batch-size", "128", "--pilot-cap", "2048", "--hours", "4"]}
+}

@@ -1,0 +1,22 @@
+[project]
+name = "refusal-moe"
+version = "0.1.0"
+description = "Expert-group interventions on refusal in mixture-of-experts language models"
+requires-python = ">=3.11,<3.13"
+license = "Apache-2.0"
+
+[project.entry-points."vllm.general_plugins"]
+sarvam = "refusal_moe.sarvam.vllm_plugin:register"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"refusal_moe.judge" = ["rubrics/*.md"]
+
+[tool.ruff]
+line-length = 120
